@@ -1,0 +1,18 @@
+@use '../abstracts' as *;
+
+/*------------------------------------------------------------
+    Title
+------------------------------------------------------------*/
+.c-title1{
+    height: 48px;
+    border-width: 1px 1px 1px 7px;
+    border-color: #ffd800;
+    border-style: solid;
+    background-color: #fff9da;
+    font-size: 2.4rem;
+    font-family: $secondary-font;
+    color: $color-title;
+    line-height: 0.833;
+    text-align: left;
+    padding: 12px 0 0 21px;
+}

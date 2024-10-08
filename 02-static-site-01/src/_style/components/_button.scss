@@ -1,0 +1,58 @@
+@use '../abstracts/' as *;
+@use 'sass:color';
+
+/*------------------------------------------------------------
+    Button
+------------------------------------------------------------*/
+.c-btn1 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 44px;
+  min-width: 150px;
+  height: 50px;
+  padding: 0 30px;
+  border-radius: 5px;
+  background-color: #afafaf;
+  color: $white;
+  transition: none;
+  font-size: 1.5rem;
+  font-family: $jp-fonts;
+  color: $white;
+  font-weight: bold;
+  line-height: 1.344rem;
+  text-align: left;
+  border: 0;
+
+  &:hover {
+    background-color: color.adjust($color: $black, $lightness: 5%);
+    opacity: 1;
+  }
+}
+
+.c-btn2 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 44px;
+  min-width: 296px;
+  height: 64px;
+  padding: 0 30px;
+  border-radius: 5px;
+  color: $white;
+  transition: none;
+  font-weight: bold;
+  border-width: 2px;
+  border-color: $secondary-text;
+  border-style: solid;
+  background-color: #ffd800;
+  font-size: 1.8rem;
+  font-family: $secondary-font;
+  line-height: 1.111rem;
+  text-align: center;
+
+  &:hover {
+    background-color: color.adjust($color: $black, $lightness: 5%);
+    opacity: 1;
+  }
+}

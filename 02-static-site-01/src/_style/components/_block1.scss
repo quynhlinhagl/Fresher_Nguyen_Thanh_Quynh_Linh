@@ -1,0 +1,78 @@
+@use '../abstracts/' as *;
+
+// BLOCK1
+.c-block1{
+  margin-top: 61px;
+
+  &__list1{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    margin-top: 31px;
+
+    &-container{
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &-content{
+      width: 610px;
+      height: 190px;
+      position: relative;
+    }
+
+    &-img{
+      width: 350px;
+      height: 190px;
+      position: relative;
+    }
+
+    &-name,
+    &-des{
+      font-family: $jp-fonts;
+      color: $color-title;
+      text-align: left;
+    }
+
+    &-name{
+      font-size: 1.6rem;
+      font-weight: bold;
+      margin-top: 4px;
+      line-height: 0.625;
+    }
+
+    &-des{
+      font-size: 1.4rem;
+      margin-top: 13px;
+      font-weight: 500;
+    }
+
+    &-btn{
+      display: flex;
+      justify-content: end;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+  }
+
+  &__label1{
+    position: absolute;
+    width: 112px;
+    height: 30px;
+    top: 0;
+    left: 0;
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: $jp-fonts;
+    color: $color-title;
+    line-height: 1.429;
+    padding-top: 5px;
+  }
+
+  &__viewmore{
+    margin-top: 62px;
+    display: flex;
+    justify-content: end;
+  }
+}

@@ -1,0 +1,40 @@
+@use '../abstracts/' as *;
+
+/*------------------------------------------------------------
+    Header
+------------------------------------------------------------*/
+.c-header {
+  width: 100%;
+  height: $header-height;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+  padding-top: 44px;
+  border-bottom: 1px solid #a8a8a8;
+  padding-bottom: 45px;
+
+  &__logo {
+    img {
+      width: 250px;
+      height: 40px;
+    }
+  }
+}
+
+.c-gnav {
+  font-weight: 500;
+
+  li {
+    display: inline-block;
+
+    + li {
+      margin-left: 37px;
+    }
+  }
+
+  a {
+    font-size: 1.3rem;
+    text-transform: capitalize;
+  }
+}

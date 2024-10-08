@@ -1,0 +1,31 @@
+<div class="c-block1">
+  <% if (typeof block1 != 'undefined') { %>
+    <div class="c-title1"><%= block1.title %></div>
+    <div class="c-block1__list1">
+      <% block1.list.forEach(item => { %>
+        <div class="c-block1__list1-container">
+          <div class="c-block1__list1-img">
+            <% if (item.tag_color === "green") { %>
+              <div class="c-block1__label1 c-label--green"><%= item.tag %></div>
+            <% } else if (item.tag_color === "yellow") { %>
+              <div class="c-block1__label1 c-label--yellow"><%= item.tag %></div>
+            <% } else if (item.tag_color === "pink") { %>
+              <div class="c-block1__label1 c-label--pink"><%= item.tag %></div>
+            <% } else if (item.tag_color === "green") { %>
+              <div class="c-block1__label1 c-label--green"><%= item.tag %></div>
+            <% } %>
+            <img src="<%= item.image.url %>" alt="<%= item.image.alt %>" loading="lazy"/>
+          </div>
+          <div class="c-block1__list1-content">
+            <p class="c-block1__list1-name"><%= item.name %></p>
+            <p class="c-block1__list1-des"><%= item.description %></p>
+            <div class="c-block1__list1-btn"><button class="c-btn1" type="<%= item.button.type %>"><%= item.button.name %></button></div>
+          </div>
+        </div>
+      <% }) %>
+    </div>
+    <div class="c-block1__viewmore">
+      <div class="c-btn2">VIEW MORE</div>
+    </div>
+  <% } %>
+</div>

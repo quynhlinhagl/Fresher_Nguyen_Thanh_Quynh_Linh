@@ -1,0 +1,22 @@
+@use '../abstracts/' as *;
+
+.c-breadcrumbs{
+  padding: 17px 0;
+
+  li {
+    display: flex;
+    align-items: center;
+  }
+
+  &__img{
+    width: 16px;
+    height: 13px;
+  }
+
+  &__title{
+    font-size: 1.4rem;
+    margin-left: 4px;
+    color: $secondary-text;
+    font-family: $jp-fonts;
+  }
+}

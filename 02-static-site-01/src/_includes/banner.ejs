@@ -1,0 +1,19 @@
+<div class="p-mainvisual">
+  <% if (typeof banner.banners != 'undefined' && banner.banners) { %>
+    <img class="p-mainvisual__bg" src="<%=banner.banners[0].image.url%>" alt="<%=banner.banners[0].image.alt%>"/>
+    <div class="p-mainvisual__content">
+      <button class="p-mainvisual__title c-label--pink"><%=banner.banners[0].title%></button>
+      <p class="p-mainvisual__desription"><%=banner.banners[0].description%></p>
+    </div>
+    <ul class="p-mainvisual__dots">
+      <% banner.banners.forEach(dot => { %>
+        <% if (dot.id === 0) { %>
+          <li class="p-mainvisual__active"></li>
+        <% } else { %>
+          <li></li>
+        <% } %>
+      <% }) %>
+    </ul>
+    <div class="p-mainvisual__number"><%= banner.banners.length %></div>
+  <% } %>
+</div>
